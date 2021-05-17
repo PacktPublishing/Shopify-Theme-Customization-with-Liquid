@@ -1,0 +1,2 @@
+<h1>{{ pages.learning-about-the-page-handle.title }}</h1>\
+<h1>{{ pages["learning-about-the-page-handle"].title }}</h1>
