@@ -1,5 +1,0 @@
-Collection info:
-
-{%- if collection -%}
-  The collection’s name is {{ collection.title -}} !
-{%- endif -%}
