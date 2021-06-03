@@ -1,0 +1,55 @@
+.custom-collection {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-top: 1px solid #cccccc;
+    padding-top: 50px;
+}
+
+.custom-collection h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.custom-collection .custom-collection--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.custom-collection .custom-collection--item {
+    margin: 15px;
+}
+
+.custom-collection p.custom-collection--title {
+    margin-bottom: 0px;
+}
+
+.custom-collection p.custom-collection--price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ea0606;
+    margin-bottom: 5px;
+}
+
+.custom-collection p.custom-collection--price span {
+    margin-left: 0.5em;
+    color: #000000;
+    text-decoration: line-through;
+}
+
+.custom-collection span.custom-collection--sale-badge {
+    text-transform: uppercase;
+    background-color: #EA0606;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: .6em;
+    padding: .25rem .55rem;
+    border: 1px solid #ea0606;
+    border-radius: 2px;
+}
+
+.custom-collection .custom-collection--item form {
+    margin-top: 15px;
+}

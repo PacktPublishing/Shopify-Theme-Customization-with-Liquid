@@ -1,0 +1,3 @@
+{% for value in product.metafields.global %}
+  {{ value:first }}:{{ value:last }}
+{% endfor %}

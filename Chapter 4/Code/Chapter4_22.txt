@@ -1,0 +1,3 @@
+{% for property in item %}
+  <span>{{ property.first }}</span>:<span>{{ property.last }}</span>
+{% endfor %}
