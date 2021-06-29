@@ -1,0 +1,17 @@
+{% if product.compare_at_price != blank %}
+<div class="custom-collection--item">
+  <a href="{{ product.url }}">
+    <img src="{{ product | img_url: "300x300" }}"/>
+    <p class="custom-collection--price">
+      {{ product.price | money }}
+      {% assign discount-price = product.compare_at_price | minus: product.price %}
+      <span>Save {{ discount-price | money }}</span>
+    </p>
+    <span class="custom-collection--sale-badge">sale</span>
+  </a>
+  {% form "product", product %}
+    <input type="hidden" name="id" value="{{ product.first_available_variant.id }}" />
+    <input type="submit" value="Add to Cart"/>
+  {% endform %}
+</div>
+{% endif %}
