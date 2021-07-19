@@ -1,0 +1,6 @@
+{
+  "type": "link_list",
+  "id": "header-menu",
+  "label": "Header Menu",
+  "default": "main-menu"
+}

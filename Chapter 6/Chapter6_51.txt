@@ -1,0 +1,5 @@
+{
+  "type": "snippet",
+  "id": "featured_products",
+  "label": "Featured products"
+}

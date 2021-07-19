@@ -1,0 +1,4 @@
+<style>
+  {% assign body_font = settings.body_font %}
+  {{ body_font | font_face }}
+</style>
