@@ -1,0 +1,10 @@
+{% schema %}
+{
+  "name": {
+    "cs": "Panel oznámení",
+    "da": "Meddelelseslinje",
+    "de": "Ankündigungsbereich",
+    "en": "Announcement bar"
+  }
+}
+{% endschema %}

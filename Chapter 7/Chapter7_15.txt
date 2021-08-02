@@ -1,0 +1,2 @@
+{% for block in section.blocks %}
+{% endfor %}

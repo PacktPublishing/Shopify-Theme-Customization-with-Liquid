@@ -1,0 +1,14 @@
+"blocks": [
+  {
+    "name": "Announcement",
+    "type": "announcement",
+    "limit": 3,
+    "settings": [
+      {
+        "type": "text",
+        "id": "announcement-text",
+        "label": "Text"
+      }
+    ]
+  }
+]

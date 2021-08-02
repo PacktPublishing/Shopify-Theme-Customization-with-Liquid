@@ -1,0 +1,24 @@
+"blocks": [
+  {
+    "name": "Product",
+    "type": "product",
+    "settings": [
+      {
+        "type": "product",
+        "id": "featured-product",
+        "label": "Product"
+      }
+    ]
+  },
+  {
+    "name": "Collection",
+    "type": "collection",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "featured-collection",
+        "label": "collection"
+      }
+    ]
+  }
+]
