@@ -1,0 +1,20 @@
+const changeCart = (el) => {
+  let formData = {
+    line: el.dataset.quantity-item,
+    quantity: el.value
+  };
+
+  fetch('/cart/change.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(success => {
+    console.log("Success:", success);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}

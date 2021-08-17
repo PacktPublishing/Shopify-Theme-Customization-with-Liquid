@@ -1,0 +1,21 @@
+const updateCart = (el) => {
+  let formData = {
+    updates: {
+      [el.previousElementSibling.value]: 5
+    }
+  };
+
+  fetch('/cart/update.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(success => {
+    console.log("Success:", success);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}

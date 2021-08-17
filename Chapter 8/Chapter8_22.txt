@@ -1,0 +1,9 @@
+const productRecommendations = (productId, limit, sectionId) => {
+fetch(`/recommendations/products?product_id=${productId}&limit=${limit}&section_id=${sectionId}`)
+  .then(response => response.text())
+  .then(products => {
+    if (products.length > 0) {
+      document.querySelector(".product-recommendations").innerHTML = products;
+    }
+  });
+}

@@ -1,0 +1,4 @@
+const cartItems = document.querySelector("[data-cart-line-items]");
+while (cartItems.firstChild) {
+  cartItems.removeChild(cartItems.firstChild);
+}

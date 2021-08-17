@@ -1,0 +1,14 @@
+const clearCart = () => {
+  fetch('/cart/clear.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(success => {
+    console.log("Success:", success);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+}
