@@ -1,1 +1,0 @@
-{% render "collection-form" for collections["outdoor"].products as product %}

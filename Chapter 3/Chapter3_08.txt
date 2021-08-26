@@ -1,3 +1,0 @@
-{{ stringVar }}
-{{ numberVar }}
-{{ booleanVar }}
