@@ -1,0 +1,8 @@
+{% if product.price > 10000 %}
+  {% continue %}
+{% else %}
+  {% capture productId %}productId-{% increment counter %}{% endcapture %}
+  {% form "product", product, id: productId, data-location: "collection" %}
+    {{ product.title }}
+  {% endform %}
+{% endif %}
