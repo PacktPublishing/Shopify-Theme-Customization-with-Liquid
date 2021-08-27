@@ -1,0 +1,9 @@
+{% for product in collections["outdoor"].products offset: 4 %}
+  {% if product.price > 10000 %}
+    {% continue %}
+  {% else %}
+    {% form "product", product %}
+      {{ product.title }}
+    {% endform %}
+  {% endif %}
+{% endfor %}
