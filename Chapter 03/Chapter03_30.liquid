@@ -1,8 +1,0 @@
-{% liquid
-for product in collections["outdoor"].products offset: 4
-  if product.price > 10000
-    continue
-  else
-    echo product.title
-  endif
-endfor %}
