@@ -1,0 +1,5 @@
+{% if product.price < 10000 %}
+  <p>{{ product.title }}</p>
+  {% form "product", product %}
+  {% endform %}
+{% endif %}
