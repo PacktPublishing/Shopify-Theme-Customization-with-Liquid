@@ -1,4 +1,0 @@
-{
-  "type": "paragraph",
-  "content": "It is recommended not to decrease the show after value below 3 seconds."
-}

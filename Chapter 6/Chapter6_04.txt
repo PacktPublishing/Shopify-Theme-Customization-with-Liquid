@@ -1,6 +1,0 @@
-{
-  "type": "checkbox",
-  "id": "enable_popup",
-  "label": "Enable popup",
-  "default": true
-}

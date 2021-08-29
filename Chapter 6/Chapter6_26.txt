@@ -1,1 +1,0 @@
-{{ settings.banner_video_url }}

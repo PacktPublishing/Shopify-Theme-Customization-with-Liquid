@@ -1,5 +1,0 @@
-{
-  "type": "blog",
-  "id": "featured_blog",
-  "label": "Featured blog"
-}

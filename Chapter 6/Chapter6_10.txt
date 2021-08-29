@@ -1,3 +1,0 @@
-.logo-img {
-  max-width: {{ settings.logo_size }}px;
-}

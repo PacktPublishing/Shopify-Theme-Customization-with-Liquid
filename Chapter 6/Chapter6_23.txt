@@ -1,6 +1,0 @@
-{
-  "type": "url",
-  "id": "banner_link",
-  "label": "Banner link",
-  "default": "/collections"
-}
