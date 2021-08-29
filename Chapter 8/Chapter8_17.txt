@@ -1,7 +1,0 @@
-const getProduct = (handle) => {
-  fetch(`/products/${handle}.js`)
-  .then(response => response.json())
-  .then(product => {
-    console.log(product.id);
-  });
-}

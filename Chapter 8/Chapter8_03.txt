@@ -1,9 +1,0 @@
-const addCart = (el) => {
-  let formData = {
-    'items': [
-      {
-        id: el.previousElementSibling.value
-      }
-    ]
-  };
-}

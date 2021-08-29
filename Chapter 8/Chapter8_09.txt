@@ -1,1 +1,0 @@
-<input type="number" name="quantity" value="0" data-quantity-item="{{ forloop.index }}"/>

@@ -1,7 +1,0 @@
-const productRecommendations = (productId, limit) => {
-fetch(`/recommendations/products.json?product_id=${productId}&limit=${limit}`)
-  .then(response => response.json())
-  .then(products => {
-    console.log(products);
-  });
-}
