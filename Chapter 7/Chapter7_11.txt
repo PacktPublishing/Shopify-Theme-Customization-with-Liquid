@@ -1,2 +1,0 @@
-{{ section.settings.announcement-text }}
-{{ section.settings.announcement-text-color }}
