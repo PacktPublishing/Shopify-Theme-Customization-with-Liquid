@@ -1,0 +1,22 @@
+<style>
+  {% assign body_font = settings.body_font %}
+  {{ body_font | font_face }}
+
+  {% assign body_font_bold = body_font | font_modify: "weight", "bolder" %}
+  {% assign body_font_italic = body_font | font_modify: "style", "italic" %}
+  {% assign body_font_bold_italic = body_font_bold | font_modify: "style", "italic" %}
+  {{ body_font_bold | font_face }}
+  {{ body_font_italic | font_face }}
+  {{ body_font_bold_italic | font_face }}
+
+  .body_bold {
+    font-family: "{{ body_font_bold.family }}", "body_font_bold.fallback_families }};
+    font-style: "{{ body_font_bold.style }}";
+    font-weight: "{{ body_font_bold.weight }}";
+  }
+  .body_italic {
+    font-family: "{{ body_font_italic.family }}", "body_font_italic.fallback_families }};
+    font-style: "{{ body_font_italic.style }}";
+    font-weight: "{{ body_font_italic.weight }}";
+  }
+</style>
