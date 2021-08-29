@@ -1,0 +1,12 @@
+{% assign product_object = all_products["gardening-gloves"] %}
+{% for media in product_object.media %}
+  {% case media.media_type %}
+    {% when "image" %}
+      {{ media | img_tag: media.alt, "class1 class2", "300x300" }}
+    {% when "external_video" %}
+      {{ media | external_video_tag }}
+    {% when "video" %}
+    {% when "model" %}
+    {% else %}
+  {% endcase %}
+{% endfor %}

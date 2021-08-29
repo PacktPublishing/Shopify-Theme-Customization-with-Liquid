@@ -1,0 +1,5 @@
+{% for media in product_object.media %}
+  {% case media.media_type %}
+    {{ media | model_viewer_tag }}
+  {% endcase %}
+{% endfor %}

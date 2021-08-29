@@ -1,0 +1,6 @@
+{% for handle in product_handles %}
+  {% assign product_object = all_products[handle] %}
+  {% for image_item in product_object.images %}
+    <img src="{{ image_item | img_url }}"/>
+  {% endfor %}
+{% endfor %}

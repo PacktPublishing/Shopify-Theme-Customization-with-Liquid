@@ -1,0 +1,5 @@
+<p class="custom-collection--price">
+  {{ product.price | money }}
+  {% assign discount-price = product.compare_at_price | minus: product.price %}
+  <span>{{ discount-price | money }}</span>
+</p>
