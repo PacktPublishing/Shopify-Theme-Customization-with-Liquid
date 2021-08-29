@@ -1,3 +1,0 @@
-{% if additional_checkout_buttons %}
-  {{ content_for_additional_checkout_buttons }}
-{% endif %}

@@ -1,3 +1,0 @@
-{% for property in item %}
-  {{ property }}
-{% endfor %}
