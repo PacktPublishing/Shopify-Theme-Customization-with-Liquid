@@ -1,3 +1,0 @@
-<div class="product-single__description rte">
-  {% assign productDescription = product.description | split: "<h6>" %}
-</div>

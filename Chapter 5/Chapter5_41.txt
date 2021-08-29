@@ -1,4 +1,0 @@
-<p class="custom-collection--price">
-  {{ product.price | money }}
-  <span>{{ product.compare_at_price | minus: product.price }}</span>
-</p>
