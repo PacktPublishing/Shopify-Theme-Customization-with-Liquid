@@ -1,0 +1,4 @@
+{% form "product", product %}
+  <input type="hidden" value="{{ product.first_available_variant.id }}" />
+    <input type="submit" value="Add to Cart"/>
+{% endform %}

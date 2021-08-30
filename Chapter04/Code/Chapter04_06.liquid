@@ -1,0 +1,9 @@
+{% if product.price < 10000 %}
+  <a href="{{ product.url }}">
+    <img src="{{ product | img_url }}"/>
+    <p>{{ product.title }}</p>
+    <p>{{ product.price | money }}</p>
+  </a>
+  {% form "product", product %}
+  {% endform %}
+{% endif %}

@@ -1,0 +1,13 @@
+{% assign collection-menu = linklists.indoor-navigation %}
+{% for link in collection-menu.links %}
+  {{ link.title }}
+  {% for sub_link in link.links %}
+    {{ sub_link.title }}
+    {% for sub_sub_link in sub_link.links %}
+      {% if sub_sub_link.type == "product_link" %}
+        <img src="{{ sub_sub_link | img_url: "250x250" }}"/>
+      {% endif %}
+      {{ sub_sub_link.title }}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}

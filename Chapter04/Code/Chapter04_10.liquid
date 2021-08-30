@@ -1,0 +1,12 @@
+{% if product.compare_at_price != blank %}
+  <a href="{{ product.url }}">
+    <img src="{{ product | img_url }}"/>
+    <p>{{ product.title }}</p>
+    <p>{{ product.price | money }}<span>{{ product.compare_at_price | money }}</span></p>
+      <span>sale</span>
+  </a>
+  {% form "product", product %}
+    <input type="hidden" name="id" value="{{ product.first_available_variant.id }}" />
+    <input type="submit" value="Add to Cart"/>
+  {% endform %}
+{% endif %}
