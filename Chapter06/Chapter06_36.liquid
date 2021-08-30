@@ -1,0 +1,11 @@
+<style>
+  {% assign body_font = settings.body_font %}
+  {{ body_font | font_face }}
+
+  {% assign body_font_bold = body_font | font_modify: "weight", "bolder" %}
+  {% assign body_font_italic = body_font | font_modify: "style", "italic" %}
+  {% assign body_font_bold_italic = body_font_bold | font_modify: "style", "italic" %}
+{{ body_font_bold | font_face }}
+{{ body_font_italic | font_face }}
+{{ body_font_bold_italic | font_face }}
+</style>
