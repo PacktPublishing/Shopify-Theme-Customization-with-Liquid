@@ -1,0 +1,19 @@
+{% style %}
+.featured-wrapper {
+  background-color: {{ section.settings.background-color }};
+}
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when "product" %}
+      .featured-product {
+
+        font-size: {{ block.settings.product-font-size }}px;
+      }
+    {% when "collection" %}
+      .featured-collection {
+
+        font-size: {{ block.settings.collection-font-size }}px;
+      }
+  {% endcase %}
+{% endfor %}
+{% endstyle %}
