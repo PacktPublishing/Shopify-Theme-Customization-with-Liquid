@@ -1,2 +1,2 @@
-# Hands-On-Liquid-Programming-for-Shopify-Theme-Customisation
-Hands-On Liquid Programming for Shopify Theme Customisation, published by Packt
+# Shopify Theme Customization with Liquid
+Shopify Theme Customization with Liquid, published by Packt
