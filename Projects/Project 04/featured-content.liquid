@@ -1,0 +1,351 @@
+<div class="featured-content-wrap">
+  
+  {% if section.settings.heading != blank %}
+  <div class="featured-content--heading">
+    <h1>{{ section.settings.heading }}</h1>
+  </div>
+  {% endif %}
+  <div class="featured-content-items">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "richtext" %}
+        {% render "featured-richtext", blockId: block.id, text: block.settings.text, width: block.settings.width %}
+      {% when "product" %}
+        {% render "featured-product", blockId: block.id, product: block.settings.product, width: block.settings.width %}
+      {% when "linklist" %}
+        {% render "featured-linklist", blockId: block.id, linklist: block.settings.linklist, width: block.settings.width %}
+      {% when "video" %}
+        {% render "featured-video", blockId: block.id, video: block.settings.video, width: block.settings.width %}
+      {% endcase %}
+  {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Content",
+	"class": "featured-content-container",
+	"max_blocks": 4,
+    "settings": [
+	  {
+		"type": "text",
+		"id": "heading",
+		"label": "Text"
+	  }
+	],
+	"blocks": [
+	  {
+		"name": "Richtext",
+		"type": "richtext",
+		"limit": 1,
+		"settings": [
+	  	  {
+			"type": "richtext",
+			"id": "text",
+			"label": "Text"
+	  	  },
+		  {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "options": [
+              {
+                "value": "one-quarter",
+                "label": "20%"
+              },
+              {
+                "value": "one-half",
+                "label": "50%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "one-whole",
+                "label": "100%"
+              }
+            ],
+            "default": "one-half"
+          },
+		  {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+		  {
+            "type": "font_picker",
+            "id": "font_family",
+            "label": "Heading font",
+            "default": "helvetica_n4"
+          },
+		  {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background text",
+            "default": "#ffffff"
+          },
+		  {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text text",
+            "default": "#000000"
+          }
+		]
+	  },
+	  {
+		"name": "Product",
+		"type": "product",
+		"limit": 1,
+		"settings": [
+	  	  {
+			"type": "product",
+			"id": "product",
+			"label": "Product"
+	  	  },
+		  {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "options": [
+              {
+                "value": "one-quarter",
+                "label": "20%"
+              },
+              {
+                "value": "one-half",
+                "label": "50%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "one-whole",
+                "label": "100%"
+              }
+            ],
+            "default": "one-half"
+          },
+		  {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+		  {
+            "type": "font_picker",
+            "id": "font_family",
+            "label": "Heading font",
+            "default": "helvetica_n4"
+          },
+		  {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background text",
+            "default": "#ffffff"
+          },
+		  {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text text",
+            "default": "#000000"
+          }
+		]
+	  },
+	  {
+		"name": "Linklist",
+		"type": "linklist",
+		"limit": 1,
+		"settings": [
+	  	  {
+			"type": "link_list",
+			"id": "linklist",
+			"label": "Linklist"
+	  	  },
+		  {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "options": [
+              {
+                "value": "one-quarter",
+                "label": "20%"
+              },
+              {
+                "value": "one-half",
+                "label": "50%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "one-whole",
+                "label": "100%"
+              }
+            ],
+            "default": "one-half"
+          },
+		  {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+		  {
+            "type": "font_picker",
+            "id": "font_family",
+            "label": "Heading font",
+            "default": "helvetica_n4"
+          },
+		  {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background text",
+            "default": "#ffffff"
+          },
+		  {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text text",
+            "default": "#000000"
+          }
+		]
+	  },
+	  {
+		"name": "Video",
+		"type": "video",
+		"limit": 2,
+		"settings": [
+	  	  {
+            "type": "video_url",
+            "id": "video",
+            "label": "Video",
+            "accept": [
+              "youtube",
+              "vimeo"
+            ]
+          },
+		  {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "options": [
+              {
+                "value": "one-quarter",
+                "label": "20%"
+              },
+              {
+                "value": "one-half",
+                "label": "50%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "one-whole",
+                "label": "100%"
+              }
+            ],
+            "default": "one-half"
+          },
+		  {
+            "type": "range",
+            "id": "font_size",
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size",
+            "default": 16
+          },
+		  {
+            "type": "font_picker",
+            "id": "font_family",
+            "label": "Heading font",
+            "default": "helvetica_n4"
+          },
+		  {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background text",
+            "default": "#ffffff"
+          },
+		  {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text text",
+            "default": "#000000"
+          }
+		]
+	  }
+	],
+	"presets": [
+	  {
+		"name": "Featured Content"
+	  }
+	]
+  }
+{% endschema %}
+
+{% style %}
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when "richtext" %}
+        {% assign font_family = block.settings.font_family %}
+        {{ font_family | font_face }}
+
+        .featured-content-item[data-block_id="{{ block.id }}"] {
+		  font-size: {{ block.settings.font_size }}px;
+		  font-family: {{ font_family.family }};
+		  background-color: {{ block.settings.background_color }};
+		  color: {{ block.settings.text_color }};
+		}
+	  {% when "product" %}
+        {% assign font_family = block.settings.font_family %}
+        {{ font_family | font_face }}
+
+        .featured-content-item[data-block_id="{{ block.id }}"] {
+		  font-size: {{ block.settings.font_size }}px;
+		  font-family: {{ font_family.family }};
+		  background-color: {{ block.settings.background_color }};
+		  color: {{ block.settings.text_color }};
+		}
+	  {% when "linklist" %}
+        {% assign font_family = block.settings.font_family %}
+        {{ font_family | font_face }}
+
+        .featured-content-item[data-block_id="{{ block.id }}"] {
+		  font-size: {{ block.settings.font_size }}px;
+		  font-family: {{ font_family.family }};
+		  background-color: {{ block.settings.background_color }};
+		  color: {{ block.settings.text_color }};
+		}
+	  {% when "video" %}
+        {% assign font_family = block.settings.font_family %}
+        {{ font_family | font_face }}
+
+        .featured-content-item[data-block_id="{{ block.id }}"] {
+		  font-size: {{ block.settings.font_size }}px;
+		  font-family: {{ font_family.family }};
+		  background-color: {{ block.settings.background_color }};
+		  color: {{ block.settings.text_color }};
+		}
+	{% endcase %}
+  {% endfor %}
+{% endstyle %}

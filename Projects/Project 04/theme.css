@@ -1,0 +1,21 @@
+  .featured-content-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  
+  .featured-content-item.one-quarter {
+      width: 25%;
+  }
+  
+  .featured-content-item.one-half {
+      width: 50%;
+  }
+  
+  .featured-content-item.three-quarters {
+      width: 75%;
+  }
+  
+  .featured-content-item.one-whole {
+      width: 100%;
+  }

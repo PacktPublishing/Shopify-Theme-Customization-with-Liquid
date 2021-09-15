@@ -1,0 +1,17 @@
+{% assign data_alt = media.alt | split: '_' | last %}
+{% assign data_variant = media.alt | split: '_' | first %}
+
+<div class="variant-thumbnail {{ forloop.index }}">
+  {% case media.media_type %}
+    {% when "image" %}
+  <img src="{{ media | img_url: '300x300' }}" alt="{{ data_alt }}" data-variant="{{ data_variant }}" index="{{ index }}"/>
+    {% when "external_video" %}
+      {{ media | external_video_tag: alt: data_alt, data-variant: data_variant, index: index }}
+    {% when "video" %}
+      {{ media | video_tag: controls: true, image_size: "300x300", width: "300x", alt: data_alt, data-variant: data_variant, index: index }}
+    {% when "model" %}
+      {{ media | model_viewer_tag }}
+    {% else %}
+      {{ media | media_tag }}
+  {% endcase %}
+</div>

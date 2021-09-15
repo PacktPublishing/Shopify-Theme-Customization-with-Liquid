@@ -1,0 +1,9 @@
+<div class="custom-subcollection--wrapper">
+    {% for link in subcollection.links %}
+    <a href="{{ link.url }}">
+
+        <p class="h4 custom-subcollection--title">{{ link.title }}</p>
+        <img src="{{ link.object | img_url: " 300x300 " }}"/>
+    </a>
+    {% endfor %}
+</div>

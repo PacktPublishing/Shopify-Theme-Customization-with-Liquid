@@ -1,0 +1,11 @@
+<div class="featured-content-item {{ width }}" data-block_id="{{ blockId }}">
+  <ul>
+    {% for link in linklist.links %}
+    <li>
+      <a href="{{ link.url }}" title="{{ link.title }}">
+        {{ link.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

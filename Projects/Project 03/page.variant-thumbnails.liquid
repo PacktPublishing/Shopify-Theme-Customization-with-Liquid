@@ -1,0 +1,4 @@
+{% assign product_object = all_products["gardening-gloves"] %}
+<div class="variant-thumbnails--wrapper">
+    {% for product_media in product_object.media %} {% render "custom-media", media: product_media, index: forloop.index %} {% endfor %}
+</div>

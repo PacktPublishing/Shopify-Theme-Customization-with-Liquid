@@ -1,0 +1,11 @@
+{
+    "name": "Featured Content Page",
+    "sections": {
+        "main": {
+            "type": "featured-content"
+        }
+    },
+    "order": [
+        "main"
+    ]
+}
