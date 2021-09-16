@@ -1,0 +1,4 @@
+{% assign product_object = all_products["gardening-gloves"] %}
+{% for image_item in product_object.images %}
+  {{ image_item | img_tag }}
+{% endfor %}

@@ -1,0 +1,19 @@
+{% assign product_object = all_products["gardening-gloves"] %}
+{% for media in product_object.media %}
+  {% case media.media_type %}
+    {% when "image" %}
+      {{ media | img_tag: media.alt, "class1 class2", "300x300" }}
+    {% when "external_video" %}
+      {% if media.host == "youtube" %}
+        {{ media | external_video_url: controls: 0, color: "white" | external_video_tag: class: "youtube_video" }}
+      {% else %}
+        {{ media | external_video_url: loop: 1, muted: 1 | external_video_tag: class: "vimeo_video" }}
+      {% endif %}
+    {% when "video" %}
+      {{ media | video_tag: controls: true, image_size: "300x300", width: "300x" }}
+    {% when "model" %}
+      {{ media | model_viewer_tag }}
+    {% else %}
+	{{ media | media_tag }}
+  {% endcase %}
+{% endfor %}

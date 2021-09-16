@@ -1,0 +1,4 @@
+{% assign product_object = all_products["gardening-gloves"] %}
+{% for image_item in product_object.images %}
+  <img src="{{ image_item | img_url: "300x300", crop: "center" }}"/>
+{% endfor %}

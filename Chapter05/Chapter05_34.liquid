@@ -1,0 +1,8 @@
+<div class="product-single__description rte">
+  {% assign productDescription = product.description | split: "<h6>" %}
+
+{% for item in productDescription %}
+  <div class="product-single__description-item">
+    {{ item }}
+  </div>
+{% endfor 
