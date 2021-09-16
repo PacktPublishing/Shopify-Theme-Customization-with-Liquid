@@ -1,4 +1,0 @@
-{% assign product_object = all_products["gardening-gloves"] %}
-{% for media in product_object.media %}
-  {{ media | img_tag: media.alt, "class1 class2", "300x300" }}
-{% endfor %}
