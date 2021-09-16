@@ -1,0 +1,4 @@
+{% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+            {{ form | payment_terms }}
+            <input type="text" placeholder="Your Name"/>
+            {% unless product.has_only_default_variant %}

@@ -1,0 +1,6 @@
+{% for property in item.properties %}
+  {% assign first_character_in_key = p.first | truncate: 1, '' %}
+  {% unless first_character_in_key == '_' %}
+    <span>{{ property.first }}</span>:<span>{{ property.last }}</span>
+  {% endunless %}
+{% endfor %}

@@ -1,0 +1,7 @@
+ {% if product.price > 10000 %}
+  {% continue %}
+{% else %}
+  {% form "product", product, data-location: "collection" %}
+    {{ product.title }}
+  {% endform %}
+{% endif %}

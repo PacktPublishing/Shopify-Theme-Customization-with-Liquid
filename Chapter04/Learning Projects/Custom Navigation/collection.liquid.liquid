@@ -1,0 +1,31 @@
+{% assign collection-menu = linklists.indoor-navigation %}
+<div class="custom-navigation">
+  {% for link in collection-menu.links %}
+  <div class="custom-navigation--item level-one">
+    <a href="{{ link.url }}">
+      {{ link.title }}
+    </a>
+    <div class="custom-navigation-wrapper">
+      {% for sub_link in link.links %}
+      <div class="custom-navigation--item level-two">
+        <a href="{{ sub_link.url }}">
+          {{ sub_link.title }}
+        </a>
+        <div class="custom-navigation--wrapper-inner">
+          {% for sub_sub_link in sub_link.links %}
+          <div class="custom-navigation--item level-three">
+            <a href="{{ sub_sub_link.url }}">
+              {% if sub_sub_link.type == "product_link" %}
+              <img src="{{ sub_sub_link.object | img_url: "250x250" }}"/>
+              {% endif %}
+              <span>{{ sub_sub_link.title }}</span>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
