@@ -1,7 +1,0 @@
-{% for product in collection.products limit: 6 %}
-  <div class="product-item {% cycle "first", "", "", "last" %}"></div>
-{% endfor %}
-
-{% for product in collection.products limit: 4 %}
-  <div class="product-item {% cycle "first", "", "", "last" %}"></div>
-{% endfor %}
