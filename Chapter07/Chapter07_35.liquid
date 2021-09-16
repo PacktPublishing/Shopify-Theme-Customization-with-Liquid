@@ -1,0 +1,5 @@
+<div class="rotating-announcement" data-speed="{{ section.settings.speed }}"></div>
+
+{% javascript %}
+  var rotationSpeed = parseInt(document.querySelector('.rotating-announcement').dataset.speed);
+{% endjavascript %}

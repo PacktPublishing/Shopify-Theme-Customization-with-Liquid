@@ -1,0 +1,13 @@
+{% style %}
+.featured-wrapper-{{ section.id }} {
+  background-color: {{ section.settings.background-color }};
+}
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when "collection" %}
+      .featured-collection-{{ block.id }} {
+        font-size: {{ block.settings.collection-font-size }}px;
+      }
+  {% endcase %}
+{% endfor %}
+{% endstyle %}
