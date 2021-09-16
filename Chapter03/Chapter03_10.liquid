@@ -1,0 +1,8 @@
+{% assign percent = 15 %}
+{% assign deal = "three or more" %}
+
+{% capture promoMessage %}
+  If you order {{ deal }} books, you can receive up to a {{ percent }}% discount!
+{% endcapture %}
+
+{{ promoMessage }}
