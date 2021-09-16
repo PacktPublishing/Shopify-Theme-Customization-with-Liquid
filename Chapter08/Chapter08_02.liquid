@@ -1,0 +1,9 @@
+const addSelector = document.querySelectorAll(".collection-submit");
+if (addSelector.length) {
+  for (let i = 0; i < addSelector.length; i++) {
+    addSelector[i].addEventListener("click", function(e) {
+      e.preventDefault();
+      addCart(this);
+    });
+  }
+}
