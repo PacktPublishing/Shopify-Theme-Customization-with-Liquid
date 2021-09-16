@@ -1,9 +1,0 @@
-const searchSelector = document.querySelectorAll(".search-bar__input");
-if (searchSelector.length) {
-  for (let i = 0; i < searchSelector.length; i++) {
-    searchSelector[i].addEventListener('input', function(e){
-      e.preventDefault();
-      predictiveSearch(this.value, 4, "product,page,article,collection");
-    });
-  }
-}
