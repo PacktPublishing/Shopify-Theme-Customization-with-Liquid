@@ -42,9 +42,9 @@ With the following software and hardware list you can run all code files present
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781801813969_ColorImages.pdf).
 
 ### Related products
-* Drupal 9 Module Development - Third Edition [[Packt]](https://www.packtpub.com/product/drupal-9-module-development-third-edition/9781800204621?utm_source=github&utm_medium=repository&utm_campaign=9781800204621) [[Amazon]](https://www.amazon.com/dp/1800204620)
+* Modernizing Enterprise CMS Using Pimcore [[Packt]](https://www.packtpub.com/product/modernizing-enterprise-cms-using-pimcore/9781801075404) [[Amazon]](https://www.amazon.com/Modernizing-Enterprise-CMS-Using-Pimcore/dp/1801075409)
 
-* WordPress 5 Cookbook [[Packt]](https://www.packtpub.com/product/wordpress-5-cookbook/9781838986506?utm_source=github&utm_medium=repository&utm_campaign=9781838986506) [[Amazon]](https://www.amazon.com/dp/B0859487NB)
+* WordPress 5 Complete - Seventh Edition [[Packt]](https://www.packtpub.com/product/wordpress-5-complete-seventh-edition/9781789532012) [[Amazon]](https://www.amazon.com/WordPress-Complete-beautiful-feature-rich-websites-dp-1789532019/dp/1789532019/ref=mt_other?_encoding=UTF8&me=&qid=)
 
 
 ## Get to Know the Author
