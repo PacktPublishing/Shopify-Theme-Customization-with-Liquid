@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B17606?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # Shopify Theme Customization with Liquid
 
 <a href="https://www.packtpub.com/programming/shopify-theme-customization-with-liquid?utm_source=github&utm_medium=repository&utm_campaign=9781801813969"><img src="https://static.packt-cdn.com/products/9781801813969/cover/smaller" alt="Shopify Theme Customization with Liquid" height="256px" align="right"></a>
