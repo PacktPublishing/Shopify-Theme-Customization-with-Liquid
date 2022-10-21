@@ -51,3 +51,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Ivan Djordjevic**
 comes from the small town of Prokuplje, Serbia. As a self-taught developer, he spent the first few years working on different projects, but only when he came in contact with Shopify and learned about Liquid that he found himself. In 2016, Ivan joined Shopify Experts under HeyCarson, where he moved to the lead developer position after a few months. Since joining the Shopify family, Ivan found his passion in sharing his knowledge with other developers and guiding them on their way to becoming a Shopify Expert.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801813969">https://packt.link/free-ebook/9781801813969 </a> </p>
